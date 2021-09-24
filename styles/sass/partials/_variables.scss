@@ -1,0 +1,16 @@
+$font-primary: 'Roboto', sans-serif;
+$font-headings: bebas-neue-v14-deprecated, sans-serif;
+
+
+
+$colours: (
+    beige: #f4db9b,
+    green: #a7d489,
+    lightgreen: #d5e7b8,
+    grey: #f6f6db,
+    middlegreen: #959e7b,
+);
+
+@function getColour($colour) {
+    @return map-get($colours, $colour);
+}
